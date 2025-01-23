@@ -13,7 +13,6 @@ from langchain.chains.sql_database.prompt import PROMPT_SUFFIX
 import chromadb
 # Clear ChromaDB cache to avoid tenant connection issuesorig
 chromadb.api.client.SharedSystemClient.clear_system_cache()
-os.environ["OPENAI_API_KEY"] = " "
 
 
 def get_few_shot_db_chain():
