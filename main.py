@@ -11,9 +11,9 @@ from langchain.prompts.prompt import PromptTemplate
 from langchain.prompts import FewShotPromptTemplate
 from langchain.chains.sql_database.prompt import PROMPT_SUFFIX
 import chromadb
-# Clear ChromaDB cache to avoid tenant connection issues
+# Clear ChromaDB cache to avoid tenant connection issuesorig
 chromadb.api.client.SharedSystemClient.clear_system_cache()
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = " "
 
 
 def get_few_shot_db_chain():
